@@ -1,0 +1,6 @@
+[Desktop Entry]
+Icon=user-home
+Name=Home
+Name[zh]=主目录
+Type==Link
+URL[$e]=file:$HOME

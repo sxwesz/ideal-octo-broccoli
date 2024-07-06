@@ -1,0 +1,6 @@
+[Desktop Entry]
+Icon=user-trash-full
+Name=Trash
+Name[zh]=回收站
+Type=Link
+URL[$e]=trash:/

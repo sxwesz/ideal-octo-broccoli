@@ -1,0 +1,25 @@
+#!/usr/bin/env -S execlineb -S1
+multisubstitute
+{
+importas -i PATH PATH
+importas -i SHELL SHELL
+}
+emptyenv -P
+export PATH /usr/lib/libexec/kf6:${PATH}
+ifte
+{
+    ifte
+    {
+        ${SHELL}
+    }
+    {
+        emptyenv -c
+        execlineb -c ${1}
+    }
+    [ ${#} -eq 0 ]
+}
+{
+    emptyenv -c
+    pkexec ${0} ${1}
+}
+sh -c "[ $(id -u) -eq 0 ]"

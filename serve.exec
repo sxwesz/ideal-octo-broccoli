@@ -1,0 +1,10 @@
+#!/usr/bin/env -S execlineb -P
+importas -i HOME HOME
+execline-cd ${HOME}
+background
+{
+    execline-cd TShock
+    tmux new -s tshock ./TShock.Server -lang 7 -config ${HOME}/TShock.conf
+}
+pstree
+#./Terraria_v1.4.4.9_amd64.AppImage
