@@ -1,10 +1,10 @@
 #!/usr/bin/env -S execlineb -S0
-multisubstitute
-{
-importas -i PATH PATH
+#multisubstitute
+#{
+#importas -i PATH PATH
 importas -i SHELL SHELL
-}
-export PATH /usr/lib/libexec/kf6:${PATH}
+#}
+#export PATH /usr/lib/libexec/kf6:${PATH}
 ifte
 {
     ifte
