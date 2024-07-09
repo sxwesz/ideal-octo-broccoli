@@ -1,0 +1,19 @@
+#!/usr/bin/env -S execlineb -P
+importas -i PATH PATH
+pipeline
+{
+echo ${PATH}
+}
+pipeline
+{
+tr : "\n"
+}
+pipeline
+{
+sort -u
+}
+pipeline
+{
+tr "\n" :
+}
+sed s/:$//g
