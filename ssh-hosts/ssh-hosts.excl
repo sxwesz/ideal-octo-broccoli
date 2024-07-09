@@ -1,0 +1,3 @@
+#!/usr/bin/env -S execlineb -S1
+importas -i HOME HOME
+./ssh-host.awk -v ip=${1} ${HOME}/.ssh/ssh_config
