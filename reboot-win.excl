@@ -4,4 +4,4 @@ backtick -E SELF_PATH
 dirname ${0}
 }
 emptyenv -c
-execlineb -S0 ${SELF_PATH}/required-root.excl "if { grub-reboot 1 } reboot"
+execlineb -S0 ${SELF_PATH}/required-root.excl "if { grub-reboot 1 } tryexec { loginctl reboot } reboot"

@@ -4,4 +4,4 @@ backtick -E SELF_PATH
 dirname ${0}
 }
 emptyenv -c
-execlineb -S0 ${SELF_PATH}/required-root.excl "if { service kexec-load start } reboot"
+execlineb -S0 ${SELF_PATH}/required-root.excl "if { service kexec-load start } tryexec { loginctl reboot } reboot"
