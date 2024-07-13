@@ -1,0 +1,7 @@
+#SendEnv LANG
+IgnoreUnknown URLPath
+Host vostro-3668
+  User kat
+  HostName vostro-3668.local
+  IdentityFile /data/data/com.termux/files/home/.ssh/vostro-3668
+  URLPath /ssh3-term
