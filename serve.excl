@@ -6,4 +6,4 @@ background
     execline-cd TShock
     tmux new -ds tshock ./TShock.Server -lang 7 -config ${HOME}/TShock.conf
 }
-./Terraria_v1.4.4.9_amd64.AppImage
+terraria
