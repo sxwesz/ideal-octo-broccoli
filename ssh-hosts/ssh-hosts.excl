@@ -4,4 +4,4 @@ backtick -E SELF_PATH
 dirname ${0}
 }
 importas -i HOME HOME
-${SELF_PATH}/ssh-hosts.awk -v ip=${1} ${HOME}/.ssh/ssh_config
+${SELF_PATH}/ssh-hosts.awk -v ip=${1} ${HOME}/.ssh/config
