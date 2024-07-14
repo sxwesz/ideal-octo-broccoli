@@ -1,7 +1,7 @@
 #!/usr/bin/env -S execlineb -S0
-backtick -E SELF_PATH
+backtick -E BASEDIR
 {
 dirname ${0}
 }
 emptyenv -c
-execlineb -S0 ${SELF_PATH}/required-root.excl whoami
+execlineb -S0 ${BASEDIR}/required-root.excl whoami

@@ -1,7 +1,7 @@
 #!/usr/bin/env -S execlineb -S1
-backtick -E SELF_PATH
+backtick -E BASEDIR
 {
 dirname ${0}
 }
 importas -i HOME HOME
-${SELF_PATH}/ssh-hosts.awk -v ip=${1} ${HOME}/.ssh/config
+${BASEDIR}/ssh-hosts.awk -v ip=${1} ${HOME}/.ssh/config
