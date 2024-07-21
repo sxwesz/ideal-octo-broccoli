@@ -1,0 +1,13 @@
+#!/sbin/openrc-run
+
+name="ssh3-server"
+command="/home/kat/go/bin/ssh3-server"
+command_args="-cert /etc/ssh3/cert.pem -key /etc/ssh3/priv.key"
+pidfile="/run/ssh3-server.pid"
+start_stop_daemon_args="-b -m -k 022"
+
+depend() {
+	use logger dns
+	after entropy
+	need net
+}
