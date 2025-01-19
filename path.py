@@ -21,8 +21,9 @@ for path in dirs:
             count += 1
     print(count)
     _sum += count
+    count = 0
     effect += 1
 
 path_len = len(dirs)
-print("binary sum:", _sum, "directory effects:", f"{effect}/{path_len}", "({:.0%})".format(effect / path_len))
+print("binary:", _sum, "directory:", f"{effect}/{path_len}", "({:.0%})".format(effect / path_len))
 
